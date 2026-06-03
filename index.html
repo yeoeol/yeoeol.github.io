@@ -1,11 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document test</title>
+    <meta name="description" content="yeoeol의 개발자 이력서와 프로젝트 포트폴리오">
+    <title>yeoeol | Developer Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
-    안녕하세요.
+    <header class="hero" id="top">
+        <nav class="top-nav" aria-label="주요 메뉴">
+            <a href="#profile">Profile</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+        </nav>
+
+        <div class="hero-word hero-word-top">Developer</div>
+        <div class="hero-word hero-word-bottom">Resume</div>
+
+        <section class="hero-content" aria-labelledby="hero-title">
+            <p class="eyebrow">Back-End Developer</p>
+            <h1 id="hero-title">yeoeol</h1>
+            <p class="hero-summary">
+                서비스의 흐름을 이해하고, 안정적인 API와 데이터 구조로 문제를 해결하는 개발자입니다.
+            </p>
+            <p class="updated">updated, on 2026.06.02</p>
+        </section>
+    </header>
+
+    <aside class="floating-links" aria-label="연락 링크">
+        <a class="floating-link" href="mailto:gnsl3528@naver.com" aria-label="이메일 보내기">
+            <span aria-hidden="true">@</span>
+        </a>
+        <a class="floating-link" href="https://github.com/yeoeol" aria-label="GitHub 열기">
+            <i class="devicon-github-original" aria-hidden="true"></i>
+        </a>
+        <a class="floating-link" href="#top" aria-label="맨 위로 이동">
+            <span aria-hidden="true">&uarr;</span>
+        </a>
+    </aside>
+
+    <main>
+        <section class="section profile-section" id="profile" aria-labelledby="profile-title">
+            <div class="section-heading">
+                <p class="eyebrow">Profile</p>
+                <h2 id="profile-title">기본 정보</h2>
+            </div>
+            <div class="profile-grid">
+                <article class="profile-card">
+                    <h3>yeoeol</h3>
+                    <p>Backend Developer</p>
+                    <dl>
+                        <div>
+                            <dt>Email</dt>
+                            <dd>gnsl3528@naver.com</dd>
+                        </div>
+                        <div>
+                            <dt>GitHub</dt>
+                            <dd>@yeoeol</dd>
+                        </div>
+                        <div>
+                            <dt>Location</dt>
+                            <dd>서울특별시</dd>
+                        </div>
+                    </dl>
+                </article>
+                <article class="intro-card">
+                    <h3>소개</h3>
+                    <p>
+                        요구사항을 작게 나누어 검증하고, 운영 중에도 읽기 쉬운 코드를 남기는 것을 중요하게 생각합니다.
+                        백엔드 중심으로 API 설계, 데이터 모델링, 테스트 자동화에 관심을 두고 성장하고 있습니다.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section education-section" id="education" aria-labelledby="education-title">
+            <div class="section-heading">
+                <p class="eyebrow">Education</p>
+                <h2 id="education-title">학력</h2>
+            </div>
+            <div class="education-list" id="education-list"></div>
+        </section>
+
+        <section class="section certificates-section" id="certificates" aria-labelledby="certificates-title">
+            <div class="section-heading">
+                <p class="eyebrow">Certificate</p>
+                <h2 id="certificates-title">자격증</h2>
+            </div>
+            <div class="certificate-list" id="certificate-list"></div>
+        </section>
+
+        <section class="section timeline-section" id="experience" aria-labelledby="experience-title">
+            <div class="section-heading">
+                <p class="eyebrow">Experience</p>
+                <h2 id="experience-title">이력</h2>
+            </div>
+            <div class="timeline" id="experience-list"></div>
+        </section>
+
+        <section class="section qa-section" aria-labelledby="qa-title">
+            <div class="section-heading">
+                <p class="eyebrow">About</p>
+                <h2 id="qa-title">일하는 방식</h2>
+            </div>
+            <div class="qa-list" id="qa-list"></div>
+        </section>
+
+        <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+            <div class="section-heading">
+                <p class="eyebrow">Skills</p>
+                <h2 id="skills-title">기술 스택</h2>
+            </div>
+            <div class="skill-groups" id="skill-groups"></div>
+        </section>
+
+        <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+            <div class="section-heading">
+                <p class="eyebrow">Projects</p>
+                <h2 id="projects-title">프로젝트</h2>
+            </div>
+
+            <div class="filter-bar" role="tablist" aria-label="프로젝트 필터">
+                <button class="filter-button is-active" type="button" data-filter="all" role="tab" aria-selected="true">전체</button>
+                <button class="filter-button" type="button" data-filter="team" role="tab" aria-selected="false">팀</button>
+                <button class="filter-button" type="button" data-filter="personal" role="tab" aria-selected="false">개인</button>
+            </div>
+
+            <div class="project-grid" id="project-grid"></div>
+        </section>
+    </main>
+
+    <div class="modal-backdrop" id="project-modal" aria-hidden="true">
+        <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <button class="modal-close" type="button" aria-label="상세 닫기"><span aria-hidden="true">&times;</span></button>
+            <div class="modal-visual" id="modal-visual"></div>
+            <div class="modal-body">
+                <p class="modal-category" id="modal-category"></p>
+                <h2 id="modal-title"></h2>
+                <p id="modal-description"></p>
+                <dl class="modal-meta" id="modal-meta"></dl>
+                <div>
+                    <h3>주요 내용</h3>
+                    <ul id="modal-highlights"></ul>
+                </div>
+                <div class="modal-stack-section">
+                    <h3>기술 스택</h3>
+                    <div class="modal-stacks" id="modal-stacks"></div>
+                </div>
+                <div class="modal-retrospective-section">
+                    <h3>프로젝트 회고</h3>
+                    <div class="modal-toggle-list" id="modal-project-notes"></div>
+                </div>
+                <a class="modal-link" id="modal-link" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+        </section>
+    </div>
+
+    <script src="./assets/js/data.js" defer></script>
+    <script src="./assets/js/renderers.js" defer></script>
+    <script src="./assets/js/modal.js" defer></script>
+    <script src="./assets/js/app.js" defer></script>
 </body>
 </html>
