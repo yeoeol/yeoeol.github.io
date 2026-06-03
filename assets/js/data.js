@@ -117,102 +117,69 @@ window.resumeData = {
             visual: "linear-gradient(135deg, #5ec4a6 0%, #2f6f73 48%, #1c2833 100%)"
         },
         {
-            id: "commerce-api",
-            title: "Commerce API",
+            id: "price-it",
+            title: "Price-it",
             category: "team",
             categoryLabel: "팀 프로젝트",
-            summary: "주문, 결제, 상품 흐름을 다루는 커머스 백엔드 API 프로젝트",
-            description: "상품 조회부터 주문 생성, 결제 요청, 주문 상태 변경까지 이어지는 커머스 도메인의 핵심 흐름을 API로 설계한 프로젝트입니다.",
-            period: "프로젝트 기간 입력",
+            summary: "주변 상권 분석을 위한 사용자 위치 기반 플랫폼 프로젝트입니다.",
+            description: "실시간 사용자의 위치 기반으로 특정 작업에 대한 알림(FCM) 기능 구현하고, 알림에서 이어지는 사용자 친화적 서비스 플로우를 구성했습니다.",
+            period: "2025.02~2025.09",
             role: "백엔드 API 설계 및 구현",
-            people: "팀 인원 입력",
+            people: "6명(프론트엔드3, 백엔드3)",
             stacks: {
-                frontend: ["HTML", "CSS", "JavaScript"],
-                backend: ["Java", "Spring Boot", "JPA", "JUnit"],
-                database: ["MySQL"],
-                devops: ["Git", "GitHub"],
+                frontend: ["Kotlin", "HTML", "CSS", "JavaScript"],
+                backend: ["Java", "Spring Boot", "JPA", "QueryDSL", "JUnit", "FCM(Firebase Cloud Messaging)"],
+                database: ["PostgreSQL", "Redis"],
+                devops: ["Git", "GitHub", "Sentry"],
                 etc: ["REST API"]
             },
             highlights: [
-                "주문과 결제 상태 변경 흐름을 명확히 분리했습니다.",
-                "예외 응답 형식을 통일해 클라이언트 연동 비용을 낮췄습니다.",
-                "주요 서비스 로직에 테스트 코드를 작성했습니다."
+                "OAuth2, 자체 로그인 기능을 개발했습니다.",
+                "복잡한 동적 쿼리를 해결하기 위해 QueryDSL 기반 검색 기능을 개발했습니다.",
+                "계정 서비스, 검색 서비스에 대한 테스트 코드를 작성했습니다.",
+                "FCM 라이브러리를 활용하여 알림 기능을 개발했습니다."
             ],
             learnings: [
-                "도메인 상태 전이를 명확히 정의해야 주문과 결제 로직의 예외 상황을 줄일 수 있다는 점을 배웠습니다.",
-                "API 응답 형식을 초기에 정리하면 프론트엔드 연동과 테스트 작성이 훨씬 수월해집니다."
+                "이미지 서비스, FCM 라이브러리 등 외부 API를 사용하는 방법을 배웠습니다.",
+                "규모 있는 프로젝트를 진행할 때는 코드의 규칙성과 일관성이 중요하다는 점을 배웠습니다.",
+                "API 요청 및 응답에 대해 동료와 고민하고 최적의 방안을 찾는 것이 중요하다는 점을 배웠습니다."
             ],
             troubleshooting: [
-                "주문 생성과 결제 요청이 섞이지 않도록 서비스 책임을 분리하고 상태 변경 지점을 명확히 했습니다.",
-                "예외 케이스를 테스트로 먼저 고정해 수정 후에도 같은 문제가 반복되지 않도록 했습니다."
+                ""
             ],
             link: "https://github.com/yeoeol",
             visual: "linear-gradient(135deg, #f2c14e 0%, #d67b45 45%, #342c2a 100%)"
         },
         {
-            id: "admin-dashboard",
-            title: "Admin Dashboard",
-            category: "company",
-            categoryLabel: "회사 프로젝트",
-            summary: "운영자가 주요 지표와 상태를 확인하는 내부 관리 화면",
-            description: "운영자가 반복적으로 확인하는 데이터와 상태 변경 기능을 한 화면에서 처리할 수 있도록 구성한 관리형 프로젝트입니다.",
-            period: "근무 기간 입력",
-            role: "기능 개발 및 유지보수",
-            people: "회사 프로젝트",
-            stacks: {
-                frontend: ["JavaScript", "HTML", "CSS"],
-                backend: ["API Integration"],
-                database: [],
-                devops: ["Git"],
-                etc: ["Dashboard"]
-            },
-            highlights: [
-                "반복 조회가 필요한 데이터를 기준별로 정리했습니다.",
-                "상태 변경 액션의 성공/실패 흐름을 명확히 표시했습니다.",
-                "운영자가 자주 쓰는 정보를 우선순위에 따라 배치했습니다."
-            ],
-            learnings: [
-                "관리자 화면은 화려함보다 반복 업무를 줄이는 정보 구조가 더 중요하다는 점을 배웠습니다.",
-                "운영자가 실제로 확인하는 순서에 맞춰 화면을 배치하면 기능 이해 비용이 줄어듭니다."
-            ],
-            troubleshooting: [
-                "상태 변경 후 화면 갱신 시점을 명확히 해 사용자가 이전 상태를 보고 혼동하지 않도록 했습니다.",
-                "반복 조회 항목을 묶어 표시해 운영자가 필요한 정보를 빠르게 찾을 수 있게 정리했습니다."
-            ],
-            link: "https://github.com/yeoeol",
-            visual: "linear-gradient(135deg, #ef6f6c 0%, #6d5dfc 55%, #1f2330 100%)"
-        },
-        {
-            id: "study-log",
-            title: "Study Log",
+            id: "idol-verse",
+            title: "IdolVerse",
             category: "personal",
             categoryLabel: "개인 프로젝트",
-            summary: "학습 내용을 정리하고 회고하는 개발 기록 프로젝트",
-            description: "개발 학습 과정에서 알게 된 개념, 문제 해결 과정, 참고 자료를 정리하는 저장소입니다. 꾸준한 기록을 통해 지식의 재사용성을 높이는 것을 목표로 합니다.",
-            period: "상시",
-            role: "기록 및 정리",
+            summary: "최애 아티스트를 구독하고 게시글을 올릴 수 있는 게시판 프로젝트",
+            description: "회원가입/로그인/로그아웃, 게시글, 댓글, 응원 기능 등 게시판의 기본적인 기능을 지원하는 API 서버 프로젝트입니다.",
+            period: "2025.02~2025.08",
+            role: "전체",
             people: "1명",
             stacks: {
                 frontend: [],
-                backend: [],
-                database: [],
+                backend: ["Java", "Spring Boot", "JPA", "JUnit"],
+                database: ["H2", "MySQL", "PostgreSQL"],
                 devops: ["Git", "GitHub"],
                 etc: ["Markdown", "Documentation"]
             },
             highlights: [
-                "학습 주제별로 문서를 분리해 탐색하기 쉽게 정리했습니다.",
-                "문제 상황, 원인, 해결 방법을 함께 기록했습니다.",
-                "추후 프로젝트에 재사용할 수 있는 체크리스트를 축적했습니다."
+                "도메인별 패키지를 분리함으로써 코드 가독성을 높였습니다.",
+                "OAuth2 로그인 기능을 구현했습니다."
             ],
             learnings: [
-                "학습 내용을 문제, 원인, 해결 순서로 정리하면 나중에 비슷한 문제를 만났을 때 재사용하기 좋다는 점을 배웠습니다.",
-                "짧은 기록이라도 꾸준히 남기면 프로젝트 회고와 기술 면접 준비에 도움이 됩니다."
+                "Spring Security를 사용하여 보안 체계를 구축하는 방법을 배울 수 있었습니다.",
+                "OAuth2 기능을 구현하면서 인증 방식에 대한 플로우를 학습했습니다.",
+                "JWT 기반 State-less 사용자 인증을 개발함으로써 로그인 방식에 대한 학습했습니다."
             ],
             troubleshooting: [
-                "주제가 늘어나면서 문서 탐색이 어려워져 카테고리와 제목 규칙을 맞춰 정리했습니다.",
-                "단순 링크 모음이 되지 않도록 문제 상황과 직접 적용한 해결 방법을 함께 기록했습니다."
+                ""
             ],
-            link: "https://github.com/yeoeol",
+            link: "https://github.com/yeoeol/IdolVerse",
             visual: "linear-gradient(135deg, #84a59d 0%, #52796f 45%, #1b2a2f 100%)"
         }
     ]
