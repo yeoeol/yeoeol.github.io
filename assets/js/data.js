@@ -196,7 +196,7 @@ window.resumeData = {
                 frontend: ["HTML", "CSS", "JavaScript", "Thymeleaf"],
                 backend: ["Java", "Spring Boot", "JPA", "JUnit", "Spring Kafka"],
                 database: ["H2", "MySQL", "Redis", "QueryDSL"],
-                devops: ["Git", "GitHub"],
+                devops: ["Git", "GitHub", "Docker", "Github Actions"],
                 etc: ["MSA(Microservices Architecture)", "DDD(Domain Driven Design)"]
             },
             highlights: [
