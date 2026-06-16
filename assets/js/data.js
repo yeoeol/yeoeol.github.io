@@ -148,7 +148,7 @@ window.resumeData = {
                 ""
             ],
             link: "https://github.com/yeoeol",
-            visual: "linear-gradient(135deg, #f2c14e 0%, #d67b45 45%, #342c2a 100%)"
+            visual: "linear-gradient(135deg, #27c00f 0%, #46ce5a 45%, #71d661 100%)"
         },
         {
             id: "idol-verse",
@@ -180,7 +180,41 @@ window.resumeData = {
                 ""
             ],
             link: "https://github.com/yeoeol/IdolVerse",
-            visual: "linear-gradient(135deg, #84a59d 0%, #52796f 45%, #1b2a2f 100%)"
+            visual: "linear-gradient(135deg, #c114c1 0%, #b233c3 45%, #b153ca 100%)"
+        },
+        {
+            id: "busking-now",
+            title: "busking-now",
+            category: "personal",
+            categoryLabel: "개인 프로젝트",
+            summary: "공연자는 버스킹을 등록하고, 청취자는 특정 버스킹을 구독하여 알림을 받는 프로젝트",
+            description: "게시판 CRUD 기능과 백그라운드 FCM 알림, MSA 아키텍처에 기반한 DDD 계층 구조를 실습한 API 서버입니다.",
+            period: "2025.12~2026.03",
+            role: "전체",
+            people: "1명",
+            stacks: {
+                frontend: ["HTML", "CSS", "JavaScript", "Thymeleaf"],
+                backend: ["Java", "Spring Boot", "JPA", "JUnit", "Spring Kafka"],
+                database: ["H2", "MySQL", "Redis", "QueryDSL"],
+                devops: ["Git", "GitHub"],
+                etc: ["MSA(Microservices Architecture)", "DDD(Domain Driven Design)"]
+            },
+            highlights: [
+                "MSA 아키텍처를 활용하여 모듈별 결합도를 낮추고 응집도를 높였습니다.",
+                "DDD 계층 구조를 사용하여 Layer별 관심사를 분리했습니다.",
+                "분산 트랜잭션을 위해 Transactional Outbox, Inbox Pattern을 활용하여 이벤트 발행 및 이벤트 멱등성을 보장했습니다."
+            ],
+            learnings: [
+                "Redis와 Kafka를 활용한 이벤트 기반 아키텍처를 실습했습니다.",
+                "복잡한 동적 쿼리를 해결하기 위해 QueryDSL 기반 검색 기능을 개발했습니다.",
+                "FCM 라이브러리를 활용하여 알림 기능을 개발했습니다.",
+                "Junit, Mockito를 활용하여 각 마이크로서비스별 테스트 코드를 작성했습니다."
+            ],
+            troubleshooting: [
+                ""
+            ],
+            link: "https://github.com/yeoeol/busking-now",
+            visual: "linear-gradient(135deg, #a43a34 0%, #b44f2b 48%, #8a4030 100%)"
         }
     ]
 };
