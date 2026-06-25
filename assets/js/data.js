@@ -19,12 +19,6 @@ window.resumeData = {
     ],
     experiences: [
         {
-            period: "2026.06 - 현재",
-            title: "개발자 이력서 사이트 제작",
-            role: "Personal Branding",
-            description: "정적 HTML/CSS/JavaScript 기반으로 프로젝트 필터와 상세 모달을 포함한 개인 이력서 페이지를 구성했습니다."
-        },
-        {
             period: "학습 및 프로젝트",
             title: "백엔드 중심 개발 경험",
             role: "Backend Developer",
@@ -34,7 +28,7 @@ window.resumeData = {
     questions: [
         {
             question: "Q. 어떤 개발자를 지향하나요?",
-            answer: "기능을 빠르게 만드는 것만큼, 이후에 읽고 고칠 수 있는 구조를 남기는 개발자를 지향합니다. 문제를 재현하고 작은 단위로 검증하는 과정을 중요하게 생각합니다."
+            answer: "기능을 빠르게 만들되, 일관된 코드를 작성하며 전체적인 비즈니스 로직 흐름을 명확하게 파악하고 구현하는 개발자를 지향합니다."
         },
         {
             question: "Q. 프로젝트에서 중요하게 보는 것은?",
@@ -42,7 +36,7 @@ window.resumeData = {
         },
         {
             question: "Q. 앞으로의 목표는?",
-            answer: "서비스 운영에 필요한 안정성, 테스트, 관찰 가능성을 꾸준히 익혀 팀이 믿고 맡길 수 있는 백엔드 개발자로 성장하는 것입니다."
+            answer: "서비스 운영에 필요한 안정성, 테스트, 모니터링 도구를 꾸준히 익혀 팀이 믿고 맡길 수 있는 백엔드 개발자로 성장하는 것입니다."
         }
     ],
     skills: [
@@ -117,6 +111,39 @@ window.resumeData = {
             visual: "linear-gradient(135deg, #5ec4a6 0%, #2f6f73 48%, #1c2833 100%)"
         },
         {
+            id: "pagopa",
+            title: "Pagopa",
+            category: "personal",
+            categoryLabel: "개인 프로젝트",
+            summary: "판매자가 등록한 상품을 구매자가 장바구니를 이용하여 주문할 수 있는 이커머스 프로젝트",
+            description: "일반적인 쇼핑몰과 같이, 특정 상품을 스크랩하고 장바구니에 추가하고 주문할 수 있는 이커머스 도메인 학습용 프로젝트입니다.",
+            period: "2026.03~2026.06",
+            role: "기획, 디자인, 구현, 테스트",
+            people: "1명",
+            stacks: {
+                backend: ["Java", "Spring Boot", "JPA", "QueryDSL", "JUnit"],
+                frontend: ["HTML", "CSS", "JavaScript", "React"],
+                database: ["H2", "MySQL"],
+                devops: ["Docker", "Git", "Github"],
+                etc: ["EFK stack", "Swagger"]
+            },
+            highlights: [
+                "트랜잭션 관리를 중심으로, 주문 상태를 추적하고 이를 바탕으로 주문 로직을 구현했습니다.",
+                "이커머스 도메인의 데이터 모델링을 진행하고 코드를 구현하며, '도메인' 그 자체에 대한 중요도를 학습했습니다.",
+                "Swagger UI를 활용하여 개발 단계에서도 API 테스트를 용이하게 하였습니다."
+            ],
+            learnings: [
+                "'주문하기' 버튼을 누르는 것, 사용자 입장에서는 굉장히 간단해 보이는 작업이지만 그 버튼 하나로 서버 내부에서는 굉장히 세밀한 코드 구현과 구조가 녹아있다는 점을 깨달았습니다.",
+                "각 도메인에 존재하는 상태 값을 관리하기 위한 스케줄러 구현하는 등 상태 변경 과정을 중요시해야 한다는 점을 학습했습니다."
+            ],
+            troubleshooting: [
+                "예외를 던질 때 일관성을 지키는 방법, 클라이언트에게 예외 내용을 전달할 때 민감정보 숨기는 방법 등을 학습했습니다.",
+                "결제 모듈과 같이 외부 API를 사용하는 작업을 처리할 때 트랜잭션을 관리하는 방법을 학습했습니다."
+            ],
+            link: "https://github.com/yeoeol/yeoeol.github.io",
+            visual: "linear-gradient(135deg, #5ec4a6 0%, #2f6f73 48%, #1c2833 100%)"
+        },
+        {
             id: "price-it",
             title: "Price-it",
             category: "team",
@@ -127,11 +154,11 @@ window.resumeData = {
             role: "백엔드 API 설계 및 구현",
             people: "6명(프론트엔드3, 백엔드3)",
             stacks: {
+                backend: ["Java", "Spring Boot", "JPA", "QueryDSL", "JUnit"],
                 frontend: ["Kotlin", "HTML", "CSS", "JavaScript"],
-                backend: ["Java", "Spring Boot", "JPA", "QueryDSL", "JUnit", "FCM(Firebase Cloud Messaging)"],
                 database: ["PostgreSQL", "Redis"],
-                devops: ["Git", "GitHub", "Sentry"],
-                etc: ["REST API"]
+                devops: ["Docker", "Git", "GitHub", "Sentry"],
+                etc: ["FCM(Firebase Cloud Messaging)", "REST API"]
             },
             highlights: [
                 "OAuth2, 자체 로그인 기능을 개발했습니다.",
@@ -161,10 +188,10 @@ window.resumeData = {
             role: "전체",
             people: "1명",
             stacks: {
-                frontend: [],
                 backend: ["Java", "Spring Boot", "JPA", "JUnit"],
+                frontend: [],
                 database: ["H2", "MySQL", "PostgreSQL"],
-                devops: ["Git", "GitHub"],
+                devops: ["Docker", "Git", "GitHub"],
                 etc: ["Markdown", "Documentation"]
             },
             highlights: [
@@ -193,10 +220,10 @@ window.resumeData = {
             role: "전체",
             people: "1명",
             stacks: {
-                frontend: ["HTML", "CSS", "JavaScript", "Thymeleaf"],
                 backend: ["Java", "Spring Boot", "JPA", "JUnit", "Spring Kafka"],
+                frontend: ["HTML", "CSS", "JavaScript", "Thymeleaf"],
                 database: ["H2", "MySQL", "Redis", "QueryDSL"],
-                devops: ["Git", "GitHub", "Docker", "Github Actions"],
+                devops: ["Docker", "Git", "GitHub", "Github Actions"],
                 etc: ["MSA(Microservices Architecture)", "DDD(Domain Driven Design)"]
             },
             highlights: [
